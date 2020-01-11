@@ -1,0 +1,39 @@
+.advantages{
+  padding: {
+    top: 120px;
+    bottom: 140px;
+  }
+
+  background: {
+    image: url("../img/advantages-bg.jpg");
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+
+  text-align: center;
+  color: $light;
+
+  &__inner{
+    font-family: $font-sup;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__block{
+    max-width: 260px;
+    width: 100%;
+    padding: 15px;
+  }
+  &-number{
+    font-size: 9em;
+    font-weight: 300;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  &-text{
+    font-size: 1.875em;
+    font-weight: 500;
+    letter-spacing: .5px;
+  }
+}

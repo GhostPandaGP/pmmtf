@@ -1,0 +1,67 @@
+.faq{
+
+  &-item{
+    padding: {
+      left: 60px;
+      right: 40px;
+    }
+
+    &__title{
+      //color: #677182;
+      color: $blue-bg;
+      font-weight: 600;
+      font-size: 1.75em;
+      letter-spacing: .5px;
+      line-height: 1.25;
+      cursor: pointer;
+
+
+      padding: {
+        top: 15px;
+        bottom: 15px;
+        right: 45px;
+        left: 10px;
+      }
+      border: none;
+      border: {
+        top: 1px solid #eee;
+      }
+      position: relative;
+      &:before{
+        display: block;
+        content: "\e902";
+        font-family: 'icomoon' !important;
+        font-size: 1em;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%) rotate(0deg);
+        transition: all .7s cubic-bezier(.165, .84, .44, 1);
+      }
+      &-rotate{
+        &:before{
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+
+    &__text{
+      padding: {
+        top: 15px;
+        bottom: 15px;
+        left: 10px;
+        right: 10px;
+      }
+      border-top: 1px solid #eee;
+      font-family: $font-sup;
+      color: $black;
+      font-weight: 500;
+      font-size: 1.25em;
+      letter-spacing: .5px;
+      line-height: 1.25;
+      display: none;
+    }
+  }
+
+}

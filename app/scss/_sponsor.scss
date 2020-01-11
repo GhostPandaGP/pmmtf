@@ -1,0 +1,36 @@
+.sponsor{
+
+  &__box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &-card{
+    width: 480px;
+    text-align: center;
+
+    color: $black;
+    font-size: 1.25em;
+    letter-spacing: .5px;
+    line-height: 1.75em;
+    font-weight: 500;
+  }
+  &-title{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &-img{
+    //display: block;
+    margin-bottom: 30px;
+  }
+  &-text{
+  }
+
+
+
+
+
+
+
+}

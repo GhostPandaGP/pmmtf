@@ -1,0 +1,100 @@
+.header{
+  &__inner{
+    margin: {
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: auto;
+    }
+    padding: {
+      top: 0;
+      bottom: 0;
+      left: 15px;
+      right: 15px;
+    }
+    max-width: 1900px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  &__logo{
+    height: 85px;
+    //width: 85px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-menu{
+
+    &__list-items{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__list-item{
+
+      & a{
+        padding:{
+          top: 10px;
+          bottom: 10px;
+          left: 15px;
+          right: 15px;
+        }
+        border: {
+          radius: 2px;
+        }
+
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: .5px;
+        color: $black;
+        transition: .5s;
+        
+        &:hover{
+          background-color: #fff7f7;
+        }
+      }
+    }
+
+
+  }
+
+  &__login{
+    padding: {
+      top: 10px;
+      bottom: 10px;
+      left: 15px;
+      right: 15px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+
+    & a{
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: .5px;
+      color: $black;
+    }
+
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+
+}

@@ -1,0 +1,139 @@
+.member{
+}
+
+.member{
+  &__title{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-align: center;
+
+    margin-bottom: 60px;
+  }
+
+  &__row{
+    margin-bottom: 50px;
+  }
+
+  &__subtitle{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.member__cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.member__card{
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.member__card-box{
+  width: 31%;
+  position: relative;
+  transform: scale(1);
+  margin-bottom: 20px;
+  transition: transform .5s;
+  overflow: hidden;
+
+  &:hover{
+    transform: scale(1.15);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+    z-index: 2;
+
+    .member__card-description{
+      transform: translateY(0);
+    }
+
+    .member__card-img{
+      background-color: rgba(255,255,255,.8);
+    }
+
+    .member__card-img::before{
+      opacity: 1;
+    }
+
+    .member__card-title{
+      transform: translateY(0);
+    }
+
+    .member__card-text{
+      transform: translateY(0);
+      transition-delay: .15s;
+    }
+  }
+}
+
+.member__card-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(180deg, #f00, #000);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.member__card-description{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.member__card {
+  &-title{
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s;
+    margin-bottom: 5px;
+    transform: translateY(200px);
+  }
+
+  &-text{
+    font-size: 1em;
+    color: #fff;
+    transform: translateY(200px);
+    transition: all .5s;
+   }
+}

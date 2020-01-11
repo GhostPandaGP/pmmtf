@@ -1,0 +1,82 @@
+.program{
+  position: relative;
+  margin-top: -50px;
+  padding: {
+    top:  170px;
+    bottom: 150px;
+  }
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+    image: url("../img/program-bg.jpg");
+  }
+
+  text-align: center;
+
+  &__title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-bottom: 35px;
+    text-shadow: 5px 5px 5px #000;
+  }
+
+  &__btn{
+    padding: {
+      top: 20px;
+      bottom: 20px;
+      left: 30px;
+      right: 30px;
+    }
+    text-shadow: 5px 5px 5px #000;
+    box-shadow: 5px 5px 5px #000;
+    font-weight: 500;
+    background-color: $blue-bg;
+    color: $light;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    letter-spacing: .5px;
+    transition: .3s;
+    &:hover{
+      box-shadow: 7px 7px 10px #000;
+    }
+  }
+
+  &__svg{
+    &-top{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      & svg{
+        display: block;
+        fill: $blue-bg;
+        height: 120px;
+      }
+    }
+    &-bottom{
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      & svg{
+        display: block;
+        height: 120px;
+      }
+    }
+
+
+
+
+  }
+
+
+
+
+
+}
